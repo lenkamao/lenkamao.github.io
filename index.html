@@ -406,7 +406,7 @@
 </ul>
 </li>
 <li>堆 Blcok(NSConcreteMallocBlock),存在于堆内存中, 是一个带引用计数的对象, 需要自行管理其内存<ul>
-<li>ARC 环境下：访问外界变量的 Block 默认存储在堆中（实际是放在栈区，然后ARC情况下自动又拷贝到堆区），自动释放。<br><img src="/iOS/block总结/block(复制" alt="block(复制)">.png)</li>
+<li>ARC 环境下：访问外界变量的 Block 默认存储在堆中（实际是放在栈区，然后ARC情况下自动又拷贝到堆区），自动释放。<br><img src="/iOS/block总结/block/(复制\" alt="block(复制)">.png)</li>
 <li>通过<strong>forwarding, 无论是在block中还是 block外访问</strong>block变量, 也不管该变量在栈上或堆上, 都能顺利地访问同一个__block变量。<h2 id="Blcok-循环引用"><a href="#Blcok-循环引用" class="headerlink" title="Blcok 循环引用"></a>Blcok 循环引用</h2></li>
 </ul>
 </li>
